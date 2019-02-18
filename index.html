@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js"> </script>
+		<title>24i Test App</title>
+	</head>
+
+	<body>
+		<main>
+			<div class="search-bar">
+				<form id="search-form" onsubmit="runSearch()">
+					<input class="search-input" id="google-search" type="text" placeholder="Search..."></input>
+					<button class="submit-button" type="submit">Search</button>
+				</form>
+			</div>
+
+			<div class="search-results">
+
+				<div class="image-results">
+					<h1 class="result-header">Image result</h1>
+					<ul id="image-list"></ul>
+				</div>
+
+				<div class="web-results">
+					<div class="header-and-list">
+						<h1 class="result-header">Web result</h1>
+						<ul id="web-results-list"></ul>
+					</div>
+					<div id="web-results-pagination"></div>
+				</div>
+
+			</div>
+		</main>
+	</body>
+</html>
